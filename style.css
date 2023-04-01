@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(21, 19, 24);
+    color: rgb(208, 206, 209);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    gap: 1em;
+
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title {
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+    font-size: clamp(3rem, 5vw, 7rem);
+    letter-spacing: .5rem;
+    color: antiquewhite
+}
+
+.subtext {
+    font-family: 'Satisfy', cursive;
+    text-align: end;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: #4C4260;
+    margin-right: 1em;
+}
+
+.card {
+
+    background-color: rgb(36, 33, 41);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: clamp(23rem, 40vw, 50rem);
+    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 30px;
+
+}
+
+.card-title {
+    font-size: clamp(1rem, 2vw, 3rem);
+
+}
+
+.card-image {
+    opacity: .4;
+    transition: all .3s ease-in-out;
+    border-radius: 30px;
+    width: 70%;
+    margin-block: 1.5em;
+}
+
+.card-image:hover {
+    opacity: .6;
+}
+
+.card-countdown {
+    background-color: #afa8ba36;
+    border: .7rem inset #AFA8BA;
+    padding: 1em;
+}
+
+
+footer {
+    padding: 2rem;
+    background-image: url(./img/gato.png);
+    background-size: cover;
+    background-position: center;
+    opacity: .3;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+
+}
+
+footer:hover {
+    opacity: .7;
+}
+
+.footer-text {
+
+    color: white;
+    letter-spacing: .2rem;
+
+}
